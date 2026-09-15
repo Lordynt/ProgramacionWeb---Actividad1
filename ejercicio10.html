@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Celsius a Fahrenheit</title>
+    <link rel="stylesheet" href="css/ejercicio10.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Conversor Celsius → Fahrenheit</h1>
+        <p class="subtitulo">Ingresa una temperatura en Celsius para convertir a Fahrenheit</p>
+        <form id="formulario" class="formulario">
+            <div class="formulario">
+                <label for="celsius">Grados Celsius (°C):</label>
+                <input type="number" id="celsius" required>
+            </div>
+
+            <div class="grupo-formulario">
+                <label for="fahrenheit">Grados Fahrenheit (°F):</label>
+                <input type="text" id="fahrenheit" readonly>
+            </div>
+            <button type="button" onclick="convertir()" class="boton-convertir">Convertir</button>
+            <p id="mensajeError" class="mensaje-error"></p>
+        </form>
+    </div>
+    <script src="js/ejercicio10.js"></script>
+</body>
+</html>
