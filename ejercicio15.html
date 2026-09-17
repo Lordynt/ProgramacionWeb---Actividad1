@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Estudiantes</title>
+    <link rel="stylesheet" href="css/ejercicio15.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Gestión de Estudiantes</h1>
+        <p class="subtitulo">Ingresa el nombre y la calificación de cada estudiante</p>
+        <form id="formulario" class="formulario" onsubmit="return false;">
+            <div class="formulario">
+                <label for="nombre">Nombre del estudiante:</label>
+                <input type="text" id="nombre" autocomplete="off">
+            </div>
+            <div class="formulario">
+                <label for="calificacion">Calificación:</label>
+                <input type="number" id="calificacion">
+            </div>
+            <button type="button" onclick="agregarEstudiante()" class="boton-agregar">Agregar estudiante</button>
+            <hr class="separador">
+            <div class="grupo-formulario">
+                <label for="promedio">Calificación promedio:</label>
+                <input type="text" id="promedio" readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="mayor">Estudiante con la calificación más alta:</label>
+                <input type="text" id="mayor" readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="menor">Estudiante con la calificación más baja:</label>
+                <input type="text" id="menor" readonly>
+            </div>
+            <button type="button" onclick="calcular()" class="boton-calcular">Calcular</button>
+            <p id="mensajeError" class="mensaje-error"></p>
+        </form>
+    </div>
+    <script src="js/ejercicio15.js"></script>
+</body>
+</html>

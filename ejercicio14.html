@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operaciones con Arreglos</title>
+    <link rel="stylesheet" href="css/ejercicio14.css">
+</head>
+<body>
+    <div class="calculadora">
+        <h1>Operaciones con Arreglos</h1>
+        <p class="subtitulo">Ingresa números separados por comas para calcular cual de los números es mayor, menor y el promedio de todos los números</p>
+        <form id="formulario" class="formulario">
+            <div class="formulario">
+                <label for="numeros">Números (separados por comas):</label>
+                <input type="text" id="numeros" placeholder="Ej: 10, 20, 30, 40, 50" required>
+            </div>
+            <div class="grupo-formulario">
+                <label for="mayor">Número mayor:</label>
+                <input type="text" id="mayor" readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="menor">Número menor:</label>
+                <input type="text" id="menor" readonly>
+            </div>
+            <div class="grupo-formulario">
+                <label for="promedio">Promedio:</label>
+                <input type="text" id="promedio" readonly>
+            </div>
+            <button type="button" onclick="calcular()" class="boton-calcular">Calcular</button>
+            <p id="mensajeError" class="mensaje-error"></p>
+        </form>
+    </div>
+    <script src="js/ejercicio14.js"></script>
+</body>
+</html>
