@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e0e7ff;
+    color: #1e1b4b;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.contenedor {
+    max-width: 550px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    font-size: 26px;
+    color: #4338ca;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.subtitulo {
+    color: #6366f1;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+.formulario {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #333;
+}
+input:focus {
+    border-color: #6366f1;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+.boton-agregar {
+    background-color: #4338ca;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    white-space: nowrap;
+}
+.boton-agregar:hover {
+    background-color: #6366f1;
+}
+.lista-tareas {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eef2ff;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border-left: 4px solid #4338ca;
+}
+.tarea-texto {
+    font-size: 15px;
+    color: #1e1b4b;
+    word-break: break-word;
+    flex: 1;
+    margin-right: 10px;
+}
+.boton-eliminar {
+    background-color: #ef4444;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton-eliminar:hover {
+    background-color: #dc2626;
+}
+.mensaje-vacio {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 14px;
+    padding: 20px;
+}
