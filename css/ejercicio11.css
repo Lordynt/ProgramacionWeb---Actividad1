@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: lightgoldenrodyellow;
+    color: black;
+    line-height: 1.6;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.calculadora {
+    max-width: 500px;
+    width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+h1 {
+    font-size: 26px;
+    color: orange;
+    margin-bottom: 8px;
+    text-align: center;
+}
+.subtitulo {
+    color: grey;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+}
+.formulario {
+    margin-bottom: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+input:focus {
+    border-color: #4CC9F0;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(76, 201, 240, 0.2);
+}
+input[readonly] {
+    background-color: #f1f3f5;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+.boton-convertir {
+    width: 100%;
+    background-color: orange;
+    color: white;
+    padding: 14px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.boton-convertir:hover {
+    background-color: rgb(223, 145, 0);
+}
+.mensaje-error {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 10px;
+    min-height: 18px;
+    font-weight: 500;
+}

@@ -1,0 +1,23 @@
+body {
+    background-color: #eef2f7;
+    min-height: 100vh;
+}
+.card {
+    border-radius: 12px;
+}
+.list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px !important;
+    margin-bottom: 8px;
+    border: 1px solid #e2e8f0;
+}
+.list-group-item:hover {
+    background-color: #f8fafc;
+}
+.btn-eliminar {
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.75rem;
+    --bs-btn-font-size: 0.85rem;
+}
